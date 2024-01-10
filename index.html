@@ -20,11 +20,15 @@
        <nav class="nav-meniu">
          <a class="logo link" href="./index.html" >Web<span class="logo-span">Studio</span></a>
            <ul class="list meniu-list">
-             <li><a href="./index.html" class="studio-link link">Studio</a></li>
              <li>
-               <a href="./portfolio.html" class="studio-link link">Portfolio</a>
-             </li>
-             <li><a href="" class="studio-link link">Contacts</a></li>
+              <a href="./index.html" class="studio-link link">Studio</a>
+            </li>
+             <li class="hero-nav-bar">
+               <a href="./portfolio.html" class="studio-link link hero-nav-bar">Portfolio</a>
+             </li >
+             <li> 
+              <a href="" class="studio-link link">Contacts</a>
+            </li>
            </ul>
          </nav>
          <address class="address">
@@ -40,8 +44,14 @@
       <section class="effective-solution">
         <div class="container">
       <h1 class="effective-solution-b">Effective Solutions for Your Business</h1>
-      <button class="button" type="button">Order Service</button>
+      <button class="button" type="button" data-modal-open="modal" data-target="#modalframe">Order Service</button>
     </div>
+<div id="modalframe" data-modal="modal">
+  <div >
+    <button type="button"  data-modal-close="modal">&times;</button>
+  </div>
+</div>
+
 
     </section>
 
@@ -362,6 +372,6 @@
     </div>
   </div>
     </footer>
- 
+    <script src="./js/modal.js"></script>
 </body>
 </html>
