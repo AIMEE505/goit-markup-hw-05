@@ -40,16 +40,16 @@
 .link{
     text-decoration: none;
     display: block;
-transition-property: background-color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 
 }
 
 .link:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
 }
 .link:focus {
+    transform: translateY(0%);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .logo-span{
@@ -380,12 +380,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: #4d5ae5;
     padding: 12px 24px;
     border: 1px solid var(--background-color-container, #e7e9fc);
-    transition-property: background-color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
     border-radius: 4px;
 }
+
 .button-filter:hover {
     color: #FFFFFFFF;
     background-color: #404BBF;
@@ -643,6 +641,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   .box:hover .overlay {
     transform: translatey(0);
   }
+
+
   
   .overlay p {
     font-size: 16px;
@@ -656,6 +656,22 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 40px;
 text-align: justify;
   
+  }
+
+  .card-text {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px; 
+    color: #f4f4f4fd;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+    
   }
 
   /* modal window */
