@@ -44,15 +44,8 @@
       <section class="effective-solution">
         <div class="container">
       <h1 class="effective-solution-b">Effective Solutions for Your Business</h1>
-      <button class="button" type="button" data-modal-open="modal" data-target="#modalframe">Order Service</button>
+      <button class="button" type="button" data-modal-open="">Order Service</button>
     </div>
-<div id="modalframe" data-modal="modal">
-  <div >
-    <button type="button"  data-modal-close="modal">&times;</button>
-  </div>
-</div>
-
-
     </section>
 
 
@@ -372,6 +365,15 @@
     </div>
   </div>
     </footer>
+    <div class="modal-window is-hidden" data-modal>
+      <div class="modal-window-container">
+        <button type="button" class="modal-window-button" data-modal-close="">
+          <svg width="8" height="8" class="icon-close">
+            <use href="./images/icons.svg#icon-close" class="close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
